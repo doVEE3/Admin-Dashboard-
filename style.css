@@ -36,11 +36,12 @@ input, textarea, button, select {
 }
 
 .sidebar {
-    border: 5px solid purple;
     display: grid;
     grid-column: 1 / 2;
     grid-row: 1 / span 2;
     grid-template-rows: 1fr 3fr 5fr;
+    background-color: #38bdf8;
+    color: white;
 }
 
 .header {
@@ -66,13 +67,11 @@ input, textarea, button, select {
 }
 
 .dashboard {
-    border: 1px solid purple;
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 6.5fr;
 }
 
 .firstButtonSet {
-    border: 1px solid purple;
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: repeat(6, 1fr);
@@ -81,8 +80,8 @@ input, textarea, button, select {
 .firstButtonSet > p {
     display: grid;
     grid-column: 2 / 3;
-    border: 1px solid purple;
     align-items: center;
+    margin-left: -32px;
     font-family: 'Roboto', sans-serif;
     font-size: 25px;
     font-weight: bold;
@@ -93,15 +92,15 @@ input, textarea, button, select {
     display: grid;
     grid-column: 1 / 2;
     grid-row: 1 / span 6;
-    width: 35px;
+    font-size: 24px;
     align-items: center;
-    justify-self: end;
-    margin-right: 15px;
-    border: 1px solid purple;
+    margin-left: 50px;
 }
 
 .secondButtonSet {
-   border: 1px solid purple;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 1fr 1fr;
 }
 
 .searchBar {
@@ -153,18 +152,42 @@ input, textarea, button, select {
     border: 1px solid purple;
 }
 
-.dashboardIcon {
-    border: 1px solid purple;
-    width: 60px;
-    margin-left: 50px;
-    margin-top: 35px;
+.DashboardIcon {
+    font-size: 50px;
+    margin-left: 30px;
+    margin-top: 39px;
     
 }
 
 .dashboard > p {
-    border: 1px solid purple;
     font-family: 'Roboto', sans-serif;
     font-size: 1.75vw;
     align-content: center;
     font-weight: bold;
+    margin-left: 10px;
 }
+
+.secondIconSet {
+    font-size: 24px;
+    display: grid;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    margin-left: 50px;
+    height: 180px;
+    margin-top: 57px;
+}
+
+.secondBtns {
+    display: grid;
+    grid-column: 2 / 3;
+    align-items: center;
+    margin-left: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    height: 150px;
+    margin-top: 53px;
+    row-gap: 30px;
+}
+
+
