@@ -1,7 +1,3 @@
-*,*::before, *::after {
-  box-sizing: border-box;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -26,12 +22,12 @@ input, textarea, button, select {
 }
 
 .main-container {
-    border: 1px solid purple;
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 4fr; 
     height: 100%;
     width: 100%;
+    background-color: #e4e4e7;
     
 }
 
@@ -45,17 +41,17 @@ input, textarea, button, select {
 }
 
 .header {
-    border: 5px solid purple;
     display: grid;
     grid-column: 2;
     grid-row: 1 / 2;
     grid-template-rows: 1fr 2fr;
     grid-template-columns: 2fr 1.5fr;
     grid-auto-flow: column;
+    background-color: white;
+    box-shadow: 0 1px 3px 0.5px rgb(82, 82, 82);
 }
 
 .main-content { 
-    border: 5px solid purple;
     display: grid;
     grid-column: 2;
     grid-row: 2 / 3;
@@ -65,6 +61,8 @@ input, textarea, button, select {
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 5px;
+    column-gap: 25px;
+    background-color: #e4e4e7;
 }
 
 .dashboard {
@@ -104,14 +102,6 @@ input, textarea, button, select {
     grid-template-rows: 1fr 1fr 1fr;
 }
 
-.searchBarContainer {
-    border: 1px solid purple;
-    display: grid;
-    grid-row: 1 / 2;
-    grid-column: 1 / span 2;
-    grid-template-columns: 2fr 1fr;
-}
-
 .userInfo {
     display: grid;
     grid-template-columns: 0.8fr 5fr;
@@ -120,34 +110,44 @@ input, textarea, button, select {
 }
 
 .yourProjects {
-    border: 1px solid purple;
     display: grid;
     grid-row: 2 / 4;
     grid-column: 1 / 2;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
+    gap: 25px
 }
 
 .announcements {
     border: 1px solid purple;
     display: grid;
-    grid-row: 2 / 3;
-    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    grid-column: 1 / 3;
+    background-color: white;
 }
 
 .trending {
     border: 1px solid purple;
     display: grid;
-    grid-row: 3 / 4;
-    grid-column: 2 / 3;
+    grid-row: 2 / 4;
+    grid-column: 1 / 3;
+    background-color: white;
 }
 
 .text1 {
-    border: 1px solid purple
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    align-self: end;
+    margin-bottom: 8px;
 }
 
 .project1, .project2, .project3, .project4, .project5, .project6 {
-    border: 1px solid purple;
+    display: grid;
+    grid-row: 1fr 2fr 1fr;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: -4px 0px 0px 0px #fbbf24;
 }
 
 .DashboardIcon {
@@ -284,4 +284,59 @@ button {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     border: none;
+}
+
+.mainContent-sidebar {
+    display: grid;
+    grid-row: 2 / 4;
+    grid-template-rows: 1.5fr 1fr;
+    row-gap: 60px;
+    border: 1px solid purple;
+}
+
+.text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  align-self: end;
+  margin-bottom: 8px;
+}
+
+.trendingtxt {
+    display: grid;
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    position: relative;
+    top: -35px;
+    font-family: 'Roboto';
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.project1text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 23px;
+    font-weight: bold;
+    align-self: end;
+    margin-left: 40px;
+    margin-bottom: 5px;
+}
+
+.project1text1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    width: 50ch;
+    color: #505055;
+    margin-left: 40px;
+}
+
+.projectIcons {
+    display: grid;
+    width: fit-content;
+    height: fit-content;
+    grid-template-columns: 65px 65px 65px;
+    font-size: 30px;
+    justify-self: end;
+    margin-top: 25px;
+    margin-right: 40px;
 }
