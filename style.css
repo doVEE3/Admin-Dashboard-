@@ -50,6 +50,7 @@ input, textarea, button, select {
     grid-column: 2;
     grid-row: 1 / 2;
     grid-template-rows: 1fr 2fr;
+    grid-template-columns: 2fr 1.5fr;
     grid-auto-flow: column;
 }
 
@@ -103,22 +104,19 @@ input, textarea, button, select {
     grid-template-rows: 1fr 1fr 1fr;
 }
 
-.searchBar {
+.searchBarContainer {
     border: 1px solid purple;
     display: grid;
     grid-row: 1 / 2;
-    grid-column: 1 / span 2
+    grid-column: 1 / span 2;
+    grid-template-columns: 2fr 1fr;
 }
 
 .userInfo {
-    border: 1px solid purple;
     display: grid;
+    grid-template-columns: 0.8fr 5fr;
     grid-row: 2 / 3;
     grid-column: 1;
-}
-
-.buttons {
-    border: 1px solid purple;
 }
 
 .yourProjects {
@@ -190,4 +188,100 @@ input, textarea, button, select {
     row-gap: 30px;
 }
 
+.searchBar {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
 
+.searchWindow {
+    width: 1000px;
+    height: 38px;
+    border-radius: 15px;
+    align-self: center;
+    margin-left: -90px;
+    background-color: #e4e4e7;
+}
+
+.searchIcon {
+    width: fit-content;
+    font-size: 30px;
+    align-self: center;
+    margin-left: 60px;
+}
+
+.name {
+    display: grid;
+    grid-template-columns: 1.2fr 0.3fr 1fr;
+    grid-template-rows: 1;
+    align-items: center;
+}
+
+.profilePic {
+    width: 45px;
+    height: 45px;
+    border-radius: 30px;
+    justify-self: center;
+}
+
+.bellIcon {
+    font-size: 30px;
+    width: fit-content;
+    justify-self: end;
+}
+
+.name > p {
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    width: fit-content;
+    justify-self: start;
+}
+
+.profilePic1 > img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+.profilePic1 {
+    align-content: center;
+    justify-self: end;
+}
+
+.helloMsg {
+    align-content: center;
+}
+
+.helloMsg > p {
+    margin-left: 25px;
+}
+
+.first {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.name1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 230px 230px 230px;
+    justify-content: center;
+    align-content: center;
+}
+
+button {
+    height: 50px;
+    width: 180px;
+    border-radius: 30px;
+    color: white ;
+    background-color: #38bdf8;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    border: none;
+}
